@@ -1,0 +1,9 @@
+.btn {
+    background-color: #fff;
+    color: #BADC58 !important;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 0.5em;
+}
+
