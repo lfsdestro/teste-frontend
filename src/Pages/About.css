@@ -1,0 +1,82 @@
+.sobre-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url('/src/img/bloco_services.svg');
+  background-repeat: no-repeat;
+  z-index: -1;
+  padding-bottom: 25px;
+}
+
+.services {
+  width: 400px;
+  margin-left: 20%;
+  margin-bottom: 5em;
+  text-align: left;
+}
+.services h2 {
+  padding: 137px 0 32px 0;
+}
+
+.services p {
+  line-height: 27px;
+  text-align: left;
+  padding-bottom: 16px;
+  line-height: 2em;
+}
+
+.button-services {
+  margin-top: 32px;
+}
+
+@media (max-width: 1300px) {
+  .sobre-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .button-services {
+    display: flex;
+    justify-content: center;
+  }
+  .services {
+    margin-left: 45%;
+  }
+}
+@media (max-width: 955px) {
+  .sobre-container {
+    background-image: none;
+  }
+  .services {
+    width: 60%;
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 425px) {
+  .services {
+    width: 84%;
+  }
+  .services h2 {
+    padding: 50px 0 32px 0;
+    text-align: center;
+  }
+  .services p {
+    text-align: center;
+    padding-bottom: 0;
+    padding: 10px;
+    width: 100%;
+  }
+  .button-services {
+    display: flex;
+    justify-content: center;
+  }
+  .subtitulo {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .services {
+    width: 96%;
+  }
+}

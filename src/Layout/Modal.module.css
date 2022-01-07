@@ -1,0 +1,43 @@
+.container {
+  position: fixed;
+  top: 5rem;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 15%);
+  background: #1d164d;
+  max-width: 520px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  transform: translateY(1rem);
+  
+}
+
+.niceJob {
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color:  #badc58;
+  
+}
+
+@keyframes slideUp {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.close {
+  width: 25px;
+  height: 25px;
+  margin-left: 90%;
+  border-radius: 50%;
+  font-size: 1rem;
+  background-color: #badc58;
+  color: #1d164d;
+  font-weight: 700;
+  cursor: pointer;
+}

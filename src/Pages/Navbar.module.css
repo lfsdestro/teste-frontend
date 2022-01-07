@@ -1,0 +1,147 @@
+.navbar {
+  width: 100%;
+  height: 103px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbarTitle {
+  width: 270px;
+  height: 39px;
+  margin: 32px 0 32px 80px;
+  color: #badc58;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav {
+  width: 457px;
+  height: 52px;
+  margin: 20px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  list-style: none;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.navList a {
+  margin-right: 24px;
+}
+
+.buttonMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 25px 20px 0 -55px;
+  padding: 0;
+  color: #badc58;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.buttonMobile::after {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  box-shadow: 0 6px currentColor, 0 -6px currentColor;
+  transition: 0.2s;
+}
+
+.buttonMobile:focus,
+.buttonMobile:hover,
+.buttomMobAct {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 3px #badc58;
+  border-color: #badc58;
+  color: #badc58;
+}
+
+.buttomMobAct::after {
+  transform: rotate(90deg);
+  width: 4px;
+  height: 4px;
+  box-shadow: 0 8px currentColor, 0 -8px currentColor;
+}
+
+.navMobile {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  right: 0;
+  padding: 0 1rem;
+  background: #badc58;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+  transform: translateX(-10px);
+  opacity: 0;
+  pointer-events: none;
+}
+.buttomMobAct {
+  transition: 0.3s;
+  transform: initial;
+  opacity: 1;
+  pointer-events: initial;
+  z-index: 100;
+}
+
+.navMobile a,
+.navMobile button {
+  display: flex;
+  align-items: center;
+  background: none;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (max-width: 888px) {
+  .navContainer {
+    align-items: center;
+  }
+
+  .navHome {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+  }
+  .nav {
+    margin: 15px;
+  }
+  .navList {
+    font-size: 13px;
+    flex-direction: column;
+    align-items: normal;
+  }
+  .navList a {
+    margin: 8px;
+  }
+}
+
+@media (max-width: 340px) {
+  .navHome {
+    width: 245px;
+  }
+}
