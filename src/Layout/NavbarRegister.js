@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../Layout/Button';
 import styles from './NavbarRegister.module.css';
 import { NavLink } from 'react-router-dom';
 import useMedia from '../useMedia';
